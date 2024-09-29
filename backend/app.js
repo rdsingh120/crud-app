@@ -7,6 +7,7 @@ import productRoutes from './routes/product.routes.js'
 const app = express()
 const port = process.env.PORT || 3000
 const __dirname = path.resolve()
+console.log('Hello ' + process.env.NODE_ENV)
 
 app.use(express.json())
 app.use('/api/products', productRoutes)
